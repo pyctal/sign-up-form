@@ -8,25 +8,77 @@
   </head>
 
   <body>
-    <div class="sidebar"></div>
+    <div class="sidebar">
+      <div class="logo">Pyctal</div>
+    </div>
 
     <div class="main-content">
-      <div class="heading"></div>
-      <div class="subheading"></div>
+      <div class="heading">
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. Sign up
+        <em>now</em> to get started.
+      </div>
+      <div class="subheading">You <em>know</em> you want to.</div>
 
       <form action="https://httpbin.org/post" method="post">
         <div class="form-card">
           <div class="form-row">
-            <div class="subheading"></div>
+            <div class="subheading">Let's do this!</div>
           </div>
-          <div class="form-row"></div>
-          <div class="form-row"></div>
-          <div class="form-row"></div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name" />
+            </div>
+
+            <div class="form-field">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="form-field">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input
+                type="tel"
+                id="phone-number"
+                name="phone-number"
+                pattern="^[+]?{1}(?:[0-9\-\(\)\/\.]\s?){6,15}[0-9]{1}$"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password" />
+            </div>
+
+            <div class="form-field">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+              />
+            </div>
+          </div>
         </div>
 
         <div class="form-footer">
-          <div class="form-row"></div>
-          <div class="form-row"></div>
+          <div class="form-row">
+            <button type="submit">Create Account</button>
+          </div>
+          <div class="form-row">
+            Already have an account? <a href="#">Log in</a>
+          </div>
         </div>
       </form>
     </div>

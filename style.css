@@ -30,6 +30,7 @@ body {
   width: 100%;
   top: 20%;
   padding: 2rem;
+  overflow-wrap: break-word;
 
   font-family: "Oughter", Helvetica, Arial, sans-serif;
   font-size: 4rem;

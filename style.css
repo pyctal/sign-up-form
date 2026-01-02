@@ -132,14 +132,32 @@ form {
   border: none;
   border-radius: 3px;
   box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #fbafb9;
+}
+
+.form-row button:active {
+  background-color: #f6354f;
 }
 
 .form-row p {
   font-size: 1rem;
 }
 
-.form-row a {
+.form-row a:link {
   text-decoration: none;
   font-weight: bold;
   color: #fa94a1;
+}
+
+.form-row a:hover {
+  color: #fbafb9;
+}
+
+.form-row a:active {
+  color: #f6354f;
 }

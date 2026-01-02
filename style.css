@@ -11,33 +11,33 @@
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
-
   min-height: 100vh;
   display: flex;
+
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .sidebar {
-  background-image: url("images/digital-art-isolated-house.jpg");
-  background-size: cover;
-
   flex: 2;
   position: relative;
+
+  background-image: url("images/digital-art-isolated-house.jpg");
+  background-size: cover;
 }
 
 .logo {
-  text-align: center;
-  font-family: "Oughter", Helvetica, Arial, sans-serif;
-  font-size: 4rem;
-  color: white;
-  background-color: rgb(0, 0, 0, 50%);
-
-  border-radius: 25px;
-  padding: 2rem;
-
   position: absolute;
   width: 100%;
   top: 20%;
+  padding: 2rem;
+
+  font-family: "Oughter", Helvetica, Arial, sans-serif;
+  font-size: 4rem;
+  text-align: center;
+
+  color: white;
+  background-color: rgb(0, 0, 0, 50%);
+  border-radius: 25px;
 }
 
 .main-content {
@@ -49,8 +49,74 @@ body {
 
 .heading,
 .subheading {
+  margin: 1rem 2rem;
+}
+
+.heading,
+.subheading,
+.form-heading {
   font-size: 1.5rem;
   font-weight: bold;
+}
 
-  margin: 1rem 2rem;
+form {
+  margin: 2rem 0;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+
+  box-shadow: 0px 5px 15px lightgrey;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.form-field input {
+  padding: 0.5rem;
+  width: 18.75rem;
+
+  font-size: 1rem;
+
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+
+  padding-left: 2rem;
+}
+
+.form-row button {
+  padding: 0.75rem 2rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 3px;
+}
+
+.form-row p {
+  font-size: 1rem;
 }

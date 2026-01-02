@@ -91,8 +91,9 @@ form {
 }
 
 .form-field input {
+  box-sizing: content-box;
   padding: 0.5rem;
-  width: 18.75rem;
+  width: 30ch;
 
   font-size: 1rem;
 
@@ -104,6 +105,10 @@ form {
   outline: none;
   border: 1px solid blue;
   box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+}
+
+.form-field input[type="password"]:invalid {
+  border: 1px solid red;
 }
 
 .form-footer {
